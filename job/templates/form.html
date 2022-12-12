@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+
+<html lang="en">
+  <head>
+    <title>employer</title>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+    <style>
+        body {
+          background-image: url('https://image.freepik.com/free-vector/employer-choose-candidates-with-magnifier-group-people-choice-best-employee-business-employees-recruitment-vector-illustration_121223-56.jpg');
+          background-size: 100%;
+        }
+        </style>
+
+</head>
+
+
+
+<style> h1 {text-align:center;} </style>
+
+<body>
+  
+    <h1> کارفرمای عزیز لطفا مشخضات خود و شرکتتان را وارد کنید</h1>
+
+    <br>
+    <br>
+    <br>
+
+
+
+    <form action="{% url 'form' %}" method="POST" >
+
+  
+
+        <div  class="form-group." >
+          <label style="float: right; clear: both" for="name">نام و نام خانوادگی صاحب شرکت</label>
+          <input  dir="rtl" type="text" name="emp_name" id="name" class="form-control" style="float: right; clear: both; width:30%" placeholder="نام و نام خانوادگی خودتان را وارد کنید">
+        
+        </div> 
+        <br>
+        <br>
+        <br>
+        <br>
+        
+        
+        
+        
+
+        <div class="form-group">
+            <label style="float: right; clear: both" for="company"> نام شرکت  </label>
+            <input dir="rtl" type="text" name="company" id="company" class="form-control" style="float: right; clear: both; width:20%" placeholder="نام شرکت را وارد کنید" >
+        </div>
+        <br>
+        <br>
+        <br>
+        <br>
+
+        <div class="form-group">
+            <label style="float: right; clear: both" for="adress">         آدرس شرکت    </label>
+            <input dir="rtl" type="text" name="adress" id="adress" class="form-control" style="float: right; clear: both; width:90%" placeholder="آدرس شرکت را وارد کنید" >
+        </div>
+          <br>
+          <br>
+          <br>
+          <br>
+        <div class="form-group">
+          <label style="float: right; clear: both" for="code_posti"> کدپستی شرکت</label>
+          <input dir="rtl" type="text" name="code_posti" id="code_posti" class="form-control" style="float: right; clear: both; width:20%" placeholder="کدپستی شرکت را وارد کنید" >
+        </div> <br>
+        <br>
+        <br>
+        <br>
+
+        <div class="form-group">
+            <label style="float: right; clear: both" for="comp_date">  تاریخ شروع به کار شرکت</label>
+            <input dir="rtl" type="date" name="comp_date" id="comp_date" class="form-control" style="float: right; clear: both; width:20%" >
+        </div> <br>
+        <br>
+        <br>
+        <br>
+
+        <div class="form-group">
+            <label style="float: right; clear: both" for="phone_number"> شماره تلفن شرکت </label>
+            <input dir="rtl" type="text" name="phone_number" id="phone_number" class="form-control" style="float: right; clear: both; width:20%" placeholder="شماره تلفن شرکت را وارد کنید" >
+        </div> <br>
+        <br>
+        <br>
+        <br>
+
+
+
+
+        <div class="form-group">
+          <label style="float: right; clear: both" for="need_job">شغل مورد نیاز برای استخدام</label>
+          <input dir="rtl" type="text" name="need_job" id="need_job" class="form-control" style="float: right; clear: both; width:20%" placeholder="شغل مد نظرتان برای استخدام را وارد کنید" >
+        </div> <br>
+        <br>
+        <br>
+
+        <label style="float: right; clear: both" for="">ترجیح می دهید کارمند شما چه جنسیتی داشته باشد؟ </label> <br>
+        <div class="form-check">
+            <label style="float: right; clear: both" class="form-check-label">
+              <input type="radio" class="form-check-input" name="gender" value="Male" id="male" >مرد
+            </label>
+        </div>
+        
+          <div class="form-check">
+            <label style="float: right; clear: both" class="form-check-label">
+              <input type="radio" class="form-check-input" name="gender" value="Female" id="female"  >زن
+            </label>
+        </div>
+        <div class="form-check disabled">
+            <label style="float: right; clear: both" class="form-check-label">
+              <input type="radio" class="form-check-input" name="gender" value="No diffrence" id="no_diffrence">فرقی نمی کند
+            </label>
+        </div>
+
+        <br>
+        <br>
+        <br>
+        <br>
+
+        
+        
+       
+
+        
+    <center> <input class="btn btn-primary" style="float: center; clear: both; width:20%" type="submit"  value="ثبت"> </center>
+
+          
+        
+          
+          
+
+        
+       
+        
+
+
+          
+
+
+
+    </form>
+
+
+
+
+</body>
+
+
+
+
+
+</html>
